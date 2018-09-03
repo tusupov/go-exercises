@@ -87,7 +87,7 @@ DELETE /account
 
 ==> POST /account
 { "amount": -100 }
-<== HTTP 401 Bad request
+<== HTTP 400 Bad request
 { "error": "Not enough money" }
 
 ==> GET /account
@@ -98,7 +98,7 @@ DELETE /account
 <== HTTP 200 OK
 
 ==> GET /account
-<== HTTP 401 Bad request
+<== HTTP 400 Bad request
 { "error": "Account is closed" }
 ```
 
