@@ -8,9 +8,9 @@
 $ docker-compose up
 ```
 ## API
-PUT [`/acoount`](#api-create) - Create account
-POST [`/acoount`](#api-deposit) - Deposit (withdrawal) from account
-GET [`/acoount`](#api-balance) - Account balance
+PUT [`/acoount`](#api-create) - Create account\
+POST [`/acoount`](#api-deposit) - Deposit (withdrawal) from account\
+GET [`/acoount`](#api-balance) - Account balance\
 DELETE [`/acoount`](#api-delete) - Close account
 
 ### <a name="api-create"></a>Create account
