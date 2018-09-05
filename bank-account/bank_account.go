@@ -45,8 +45,7 @@ func (a *Account) Deposit(amount int64) (newBalance int64, ok bool) {
 			break
 		}
 		if atomic.CompareAndSwapInt64(&a.balance, balance, balance+amount) {
-			newBalance = balance + amount
-			ok = true
+			newBalance, ok = balance+amount, true
 			break
 		} else {
 			runtime.Gosched() // Effectively in concurrency
