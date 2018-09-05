@@ -32,6 +32,14 @@ POST /account
 ### <a name="api-balance"></a> Account balance
 ```
 GET /account
+{
+  "amount": 50 // Account balance
+}
+```
+
+### <a name="api-delete"></a> Close account
+```
+DELETE /account
 ```
 
 ## Example
